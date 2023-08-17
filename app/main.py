@@ -45,7 +45,7 @@ def read_image(image_str):
     # Compute the HOG Descriptor for the gray scale image
     hog_descriptor = hog.compute(img_new)
 
-    return {'HOG Descriptor': len(hog_descriptor)}
+    return {'HOG Descriptor': hog_descriptor.tolist()}
     # return image
 
 
